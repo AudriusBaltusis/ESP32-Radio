@@ -62,6 +62,14 @@ void setup()
   preferences.putString ( "clk_server", "pool.ntp.org" ) ;        // Setting for Time Of Day clock on TFT
   preferences.putString ( "clk_offset", "1" ) ;
   preferences.putString ( "clk_dst",    "1" ) ;
+
+  preferences.putString ( "pin_tft_cs", "15" ) ;                  // TFT
+  preferences.putString ( "pin_tft_dc", "2" ) ;
+
+  preferences.putString ( "pin_enc_clk", "25" ) ;                 // Rotary encoder
+  preferences.putString ( "pin_enc_dt", "26" ) ;
+  preferences.putString ( "pin_enc_sw", "27" ) ;
+
   preferences.end() ;
   delay ( 1000 ) ;
 }
